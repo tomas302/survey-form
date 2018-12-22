@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+body {
+  font-family: Raleway;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  max-width: 800px;
+  width: 75%;
+}
+
+#survey-form {
+
+}
+
+label {
+  text-align: right;
+  padding: 5px 10px 0px 0px;
+  font-size: 18px;
+}
+
+input {
+  padding: 8px 2px 8px 6px;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: #c0c0c0;
+  border-width: 1px;
+}
+
+select {
+  max-width: 35%;
+}
+
+.form-input {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 10px;
+}
+
+#user-rating {
+    width: 180px;
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+#user-rating li input[type="radio"] {
+  float: left;
+}
+
+#improvement-areas {
+    width: 200px;
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+#improvement-areas li input[type="checkbox"] {
+  float: left;
+}
+
+#comments {
+  min-height: 50px;
+  width: 100% !important;
+  padding: 5px;
+}
+
+#form-submit {
+  margin-top: 30px;
+}
+
+#form-submit button {
+  padding: 12px;
+}
