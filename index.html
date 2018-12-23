@@ -7,56 +7,58 @@
   <body>
     <div id="root">
       <h1 id="title">Survey Form</h1>
-      <p id="description">Let us know your opinion about our service</p>
-      <form id="survey-form">
-        <div class="form-input">
-          <label id="name-label" for="name">* Name:</label>
-          <input required autofocus placeholder="Enter your name" type="text" id="name">
-        </div>
-        <div class="form-input">
-          <label id="email-label" for="email">* Email:</label>
-          <input required placeholder="Enter your email" type="email" id="email">
-        </div>
-        <div class="form-input">
-          <label id="number-label" for="number">* Age:</label>
-          <input required placeholder="Enter your age" min=0 max=110 type="number" id="number">
-        </div>
-        <div class="form-input">
-          <label id="dropdown-label" for="dropdown">What kind of use do you give to this service?</label>
-          <select id="dropdown">
-            <option disabled selected>Select an option</option>
-            <option value="professional">Professional</option>
-            <option value="personal">Personal</option>
-            <option value="personal">Prefer not to say</option>
-            <option value="personal">Other</option>
-          </select>
-        </div>
-        <div class="form-input">
-          <label id="rating-label">* How likely is that you would recommend this service to a friend?</label>
-          <ul id="user-rating">
-            <li><label>Already did<input type="radio" value="1" name="radio-buttons"></label></li>
-            <li><label>Very likely<input type="radio" value="2" name="radio-buttons"></label></li>
-            <li><label>Maybe<input type="radio" value="3" name="radio-buttons"></label></li>
-            <li><label>Not sure<input type="radio" value="4" name="radio-buttons"></label></li>
-          </ul>
-        </div>
-        <div class="form-input">
-          <label id="improvement-label">Which areas do you think need improvement?</label>
-          <ul id="improvement-areas">
-            <li><label>UI<input type="checkbox" value="1" name="improvement"></label></li>
-            <li><label>Network Latency<input type="checkbox" value="2" name="improvement"></label></li>
-            <li><label>Network Availability<input type="checkbox" value="3" name="improvement"></label></li>
-            <li><label>Customer Service<input type="checkbox" value="4" name="improvement"></label></li>
-          </ul>
-        </div>
-        <div class="form-input">
-          <label id="comments-label" for="comments"> Any Comments or Suggestions?:</label>
-          <textarea placeholder="Write here your opinion or thoughts.." id="comments"></textarea>
-        </div>
-        <div id="form-submit">
-          <button id="submit" type="submit">Submit</button>
-        </div>
-      </form>
+      <div id="outer-form">
+        <p id="description">Let us know your opinion about our service</p>
+        <form id="survey-form">
+          <div class="form-input">
+            <label id="name-label" for="name">* Name:</label>
+            <input required autofocus placeholder="Enter your name" type="text" id="name">
+          </div>
+          <div class="form-input">
+            <label id="email-label" for="email">* Email:</label>
+            <input required placeholder="Enter your email" type="email" id="email">
+          </div>
+          <div class="form-input">
+            <label id="number-label" for="number">* Age:</label>
+            <input required placeholder="Enter your age" min=0 max=110 type="number" id="number">
+          </div>
+          <div class="form-input">
+            <label id="dropdown-label" for="dropdown">What kind of use do you give to this service?</label>
+            <select id="dropdown">
+              <option disabled selected>Select an option</option>
+              <option value="professional">Professional</option>
+              <option value="personal">Personal</option>
+              <option value="personal">Prefer not to say</option>
+              <option value="personal">Other</option>
+            </select>
+          </div>
+          <div class="form-input">
+            <label id="rating-label">* How likely is that you would recommend this service to a friend?</label>
+            <ul id="user-rating">
+              <li><label>Already did<input type="radio" value="1" name="radio-buttons"></label></li>
+              <li><label>Very likely<input type="radio" value="2" name="radio-buttons"></label></li>
+              <li><label>Maybe<input type="radio" value="3" name="radio-buttons"></label></li>
+              <li><label>Not sure<input type="radio" value="4" name="radio-buttons"></label></li>
+            </ul>
+          </div>
+          <div class="form-input">
+            <label id="improvement-label">Which areas do you think need improvement?</label>
+            <ul id="improvement-areas">
+              <li><label>UI<input type="checkbox" value="1" name="improvement"></label></li>
+              <li><label>Network Latency<input type="checkbox" value="2" name="improvement"></label></li>
+              <li><label>Network Availability<input type="checkbox" value="3" name="improvement"></label></li>
+              <li><label>Customer Service<input type="checkbox" value="4" name="improvement"></label></li>
+            </ul>
+          </div>
+          <div class="form-input">
+            <label id="comments-label" for="comments"> Any Comments or Suggestions?:</label>
+            <textarea placeholder="Write here your opinion or thoughts.." id="comments"></textarea>
+          </div>
+          <div id="form-submit">
+            <button id="submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
