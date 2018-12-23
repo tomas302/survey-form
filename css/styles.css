@@ -81,3 +81,51 @@ select {
 #form-submit button {
   padding: 12px;
 }
+
+@media (max-width: 1024px) {
+  #root {
+    max-width: 800px;
+    width: 95%;
+  }
+
+  #outer-form {
+    background-color: white;
+    padding: 20px 20px 50px 20px;
+    border-radius: 5px;
+  }
+
+  .form-input {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  label {
+    text-align: center;
+  }
+
+  select {
+    justify-self: center;
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  #user-rating {
+    margin-top: 15px;
+    justify-self: center;
+  }
+
+  #improvement-areas {
+    margin-top: 15px;
+    justify-self: center;
+  }
+
+  #comments {
+    margin-top: 15px;
+  }
+
+  #form-submit button {
+    font-size: 20px;
+    padding: 25px;
+  }
+}
